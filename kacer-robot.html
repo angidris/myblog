@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Kacer Robot
+    </title>
+    <style>:root{--border-radius:5px;--box-shadow:2px 2px 10px;--color:#118bee;--color-accent:#118bee15;--color-bg:#fff;--color-bg-secondary:#e9e9e9;--color-secondary:#0645AD;--color-secondary-accent:#920de90b;--color-shadow:#f4f4f4;--color-text:#000;--color-text-secondary:#999;--font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;--hover-brightness:1.2;--justify-important:center;--justify-normal:left;--line-height:1.5;--width-card:285px;--width-card-medium:460px;--width-card-wide:800px;--width-content:1080px}article aside{background:var(--color-secondary-accent);border-left:4px solid var(--color-secondary);padding:.01rem .8rem}body{background:var(--color-bg);color:var(--color-text);font-family:var(--font-family);line-height:var(--line-height);margin:0;overflow-x:hidden;padding:1rem 0}footer,header,main{margin:0 auto;max-width:var(--width-content);padding:0rem 1rem}hr{background-color:var(--color-bg-secondary);border:none;height:1px;margin:4rem 0}section{display:flex;flex-wrap:wrap;justify-content:var(--justify-important)}section aside{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);margin:1rem;padding:1.25rem;width:var(--width-card)}section aside:hover{box-shadow:var(--box-shadow) var(--color-bg-secondary)}section aside img{max-width:100%}[hidden]{display:none}article header,div header,main header{padding-top:0}header{text-align:var(--justify-important)}header a b,header a em,header a i,header a strong{margin-left:.5rem;margin-right:.5rem}header nav img{margin:1rem 0}section header{padding-top:0;width:100%}nav{align-items:center;display:flex;font-weight:700;justify-content:space-between;margin-bottom:7rem}nav ul{list-style:none;padding:0}nav ul li{display:inline-block;margin:0 .5rem;position:relative;text-align:left}nav ul li:hover ul{display:block}nav ul li ul{background:var(--color-bg);border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:none;height:auto;left:-2px;padding:.5rem 1rem;position:absolute;top:1.7rem;white-space:nowrap;width:auto}nav ul li ul li,nav ul li ul li a{display:block}code,samp{background-color:var(--color-accent);border-radius:var(--border-radius);color:var(--color-text);display:inline-block;margin:0 .1rem;padding:0 .5rem}details{margin:1.3rem 0}details summary{font-weight:700;cursor:pointer}h1,h2,h3,h4,h5,h6{line-height:var(--line-height)}mark{padding:.1rem}ol li,ul li{padding:.2rem 0}p{margin:.75rem 0;padding:0}pre{margin:1rem 0;max-width:var(--width-card-wide);padding:1rem 0}pre code,pre samp{display:block;max-width:var(--width-card-wide);padding:.5rem 2rem;white-space:pre-wrap}small{color:var(--color-text-secondary)}sup{background-color:var(--color-secondary);border-radius:var(--border-radius);color:var(--color-bg);font-size:xx-small;font-weight:700;margin:.2rem;padding:.2rem .3rem;position:relative;top:-2px}a{color:var(--color-secondary);display:inline-block;text-decoration:none}a:hover{filter:brightness(var(--hover-brightness));text-decoration:underline}a b,a em,a i,a strong,button{border-radius:var(--border-radius);display:inline-block;font-size:medium;font-weight:700;line-height:var(--line-height);margin:.5rem 0;padding:1rem 2rem}button{font-family:var(--font-family)}button:hover{cursor:pointer;filter:brightness(var(--hover-brightness))}a b,a strong,button{background-color:var(--color);border:2px solid var(--color);color:var(--color-bg)}a em,a i{border:2px solid var(--color);border-radius:var(--border-radius);color:var(--color);display:inline-block;padding:1rem}figure{margin:0;padding:0}figure img{max-width:100%}figure figcaption{color:var(--color-text-secondary)}button:disabled,input:disabled{background:var(--color-bg-secondary);border-color:var(--color-bg-secondary);color:var(--color-text-secondary);cursor:not-allowed}button[disabled]:hover{filter:none}form{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:block;max-width:var(--width-card-wide);min-width:var(--width-card);padding:1.5rem;text-align:var(--justify-normal)}form header{margin:1.5rem 0;padding:1.5rem 0}input,label,select,textarea{display:block;font-size:inherit;max-width:var(--width-card-wide)}input[type=checkbox],input[type=radio]{display:inline-block}input[type=checkbox]+label,input[type=radio]+label{display:inline-block;font-weight:400;position:relative;top:1px}input,select,textarea{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);margin-bottom:1rem;padding:.4rem .8rem}input[readonly],textarea[readonly]{background-color:var(--color-bg-secondary)}label{font-weight:700;margin-bottom:.2rem}table{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);border-spacing:0;display:inline-block;max-width:100%;overflow-x:auto;padding:0;white-space:nowrap}table td,table th,table tr{padding:.4rem .8rem;text-align:var(--justify-important)}table thead{background-color:var(--color);border-collapse:collapse;border-radius:var(--border-radius);color:var(--color-bg);margin:0;padding:0}table thead th:first-child{border-top-left-radius:var(--border-radius)}table thead th:last-child{border-top-right-radius:var(--border-radius)}table thead th:first-child,table tr td:first-child{text-align:var(--justify-normal)}table tr:nth-child(even){background-color:var(--color-accent)}blockquote{display:block;font-size:x-large;line-height:var(--line-height);margin:1rem auto;max-width:var(--width-card-medium);padding:1.5rem 1rem;text-align:var(--justify-important)}blockquote footer{color:var(--color-text-secondary);display:block;font-size:small;line-height:var(--line-height);padding:1.5rem 0} article{padding: 1.25rem;}.v-cover{height: 480px; object-fit: cover;width: 100vw;cursor: pointer;}.v-image{height: 250px; object-fit: cover;width: 100vw;cursor: pointer;}.dwn-cover{max-height: 460px; object-fit: cover;}.w-100{width: 100vw}.search-box{color:#333;background-color:#f5f5f5;width:85%;height:50px;padding:0 20px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}.btn{display:inline-block;font-weight:400;color:#212529;text-align:center;vertical-align:middle;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-color:transparent;border:1px solid transparent;border-top-color:transparent;border-right-color:transparent;border-bottom-color:transparent;border-left-color:transparent;padding:.375rem .75rem;margin:0.5rem;font-size:1rem;line-height:1.5;border-radius:.25rem;transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out}.btn-danger{color:#fff;background-color:#dc3545;border-color:#dc3545}.btn-success{color:#fff;background-color:#28a745;border-color:#28a745}.btn-group-sm>.btn,.btn-sm{padding:.25rem .5rem;font-size:.875rem;line-height:1.5;border-radius:.2rem}
+</style>
+	<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "James"
+  },
+  "headline": "Kacer Robot",
+  "datePublished": "2021-08-26",
+  "image": "https://i.pinimg.com/originals/5a/de/76/5ade76c8c811631321868d6f9fb510d1.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Shuriken MOD",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=kacer+robot",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code --></head>
+<body>
+    <header>
+        <h1>
+            <a href="/">
+            Kacer Robot
+            </a>
+        </h1>
+        <p>
+                            Best Wallpaper Ideas website. Search anything about Wallpaper Ideas in this website.
+                    </p>
+        <center>
+            <input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+            <div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>        </center>
+    </header>
+    <main>
+        <article>
+    <p><strong>Kacer Robot</strong>. Mesin pembersih merupakan alat kebersihan yang sifatnya mekanik dan biasa digunakan di biadang industrial. Menggunakan mesin membuat kegiatan membersihkan jadi lebih cepat hemat waktu dan tenaga.</p>
+            <figure>
+        <img class="v-cover ads-img" src="https://i.pinimg.com/originals/45/83/90/45839031d315bc0c2b965eb84f7ffa29.png" alt="Love Bird Robotic On Behance Love Birds Lovebirds Art Bird Logo Design" style="width: 100%; padding: 5px; background-color: grey;"  onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1bwhJ4VOLRnpU8vJj06lfCjdYtC8nPDPW5YatyNnYPRUlfpXyRZpZnHPrsMv4tRjRUlU';">
+        <figcaption>Love Bird Robotic On Behance Love Birds Lovebirds Art Bird Logo Design from www.pinterest.com</figcaption>
+    </figure>
+        <p>
+        Mesin pembersih merupakan alat kebersihan yang sifatnya mekanik dan biasa digunakan di biadang industrial. Robert Kacer Product Owner RPA Solutions. Zobrazte si profil uživatele Robert Kacer na LinkedIn největší profesní komunitě na světě.
+    </p>
+    <h3>Show full abstract system of six legged robot model is composed of three main parts.</h3>
+    <p>SWEATER HOODIE JUMPER MURAI BATU KICAU MANIA. Invented by Radim Kacer. Louis Blake Hathorn Jr Composite Materials. Kaos Baju Jersey Burung LoveBird Robot Kontes Kicau Mania BAD228Rp127000.</p>
+</article>
+
+<section>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Koleksi Gambar Kartun" src="https://i.pinimg.com/736x/5a/a8/90/5aa89021c8188c46d47570cd568a4242.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoG7GwDsZKsv8CpHBO63ezhOubVn9ZRo6wxKbjo-GvpTstMrPg_fD82XT0w37AqSlBdw4';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Máy hút bụi gia đình Karcher nhằm mang lại sự tiện lợi với chất lượng hút bụi cao cấp nhất giúp bảo vệ sức khỏe có các bệnh nhân có tiền sử dị ứng.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Love Bird Robotic On Behance Love Birds Lovebirds Art Bird Logo Design" src="https://i.pinimg.com/originals/45/83/90/45839031d315bc0c2b965eb84f7ffa29.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1bwhJ4VOLRnpU8vJj06lfCjdYtC8nPDPW5YatyNnYPRUlfpXyRZpZnHPrsMv4tRjRUlU';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>They impress with their high quality and durability innovative filter technology and extraordinary operating comfort.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Lovebird Parrot Sitting On The Wooden Branches Vector Illustration Poster Id 227254939 Vector Illustration Illustrations Posters Love Birds Pet" src="https://i.pinimg.com/564x/bc/3a/81/bc3a8137fbb3e8ec980dd8b51d4045a8.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGst833qISaZB4g_F9Des58BcYakPaP8910QCWMKtab28ZRBgI3IBTQSE15uLvWLKbTls';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Ad Get in touch with the leading experts today for your customized solution.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Logo Burung Kacer Vector In 2021 Bird Logos Vector Logo Logo Design" src="https://i.pinimg.com/originals/33/69/ae/3369aed5c7074634418889bc7cbd42c0.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRm76I9NDTfCZeOfHcfzIJgjtgkg8_ikqLPHSWbTO0uQObMB2tsrAyqTBCOtlqjittQ_fo';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>One of a kind.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Dbrand Robot Doodle Art Iphone Wallpaper Wallpaper" src="https://i.pinimg.com/originals/ef/3b/f1/ef3bf1c856565602f477dbf1d202f3a1.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxCtBqBIly6R7yErbombVQ_hillwtmCS1UURKqebNVp6G2OAUXsnnsz9CEG9F1faxfcb8';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Designed by Radim KacerPrivate edition.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin By Deedee On All Sci Fi Concept Art Building Art Robots Concept" src="https://i.pinimg.com/originals/c5/a2/b4/c5a2b424b033f77ea8c655d1fb0b2af6.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaC0TCef-fgvR1Rh4MymqcqeXnHGbh3Niqu1OYiGAqES_dU_Beyt5_-ylkbNrciLTcFog';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>A City In The Jazz AgeCathy Ross Social Justice and ChristianityDr.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Primalmotion Primalmotion 3d Printing Prints The Incredibles" src="https://i.pinimg.com/originals/da/12/13/da121392d837f821948d01f8dd467803.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDeZFQ5Tswt4zbR8CbZynZZCZgmoSsGu2099zDYkXQB0R4U8sF6ocwDlsPn5li_UlWirE';" />
+        <small>Source: ar.pinterest.com</small>
+                    <p>Burung kacer jawa nama ilmiahnya adalah Copsychus sechellarum sedangkan kacer poci adalah Copsychus saularis.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin On Birds Of A Feather" src="https://i.pinimg.com/originals/11/43/45/11434505dead117b12cd9a1f4182ff6c.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXGVA1tSTEuWPr-CSXhL4ZnYmeC4sTTbkr8cVsONH8E854YqK9wxdqiql1PQuK5hqBP5Q';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>One of Mulungu series wallpapers released as Private edition.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Space Rockets Rocket Racer 7 Masudaya Japan Alphadrome Robot And Space Toy Database Space Toys Toys Vintage Robots" src="https://i.pinimg.com/originals/e9/68/38/e968380e4aa90fef5223333db5ce95be.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7KdqgYJhl8DMtLbZwaFN8LehSZpLGkFEWOkZh6sco1BRDtsV5xyDF-jzZCeRtTkU67uc';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Burung kacer jawa nama ilmiahnya adalah Copsychus sechellarum sedangkan kacer poci adalah Copsychus saularis.</p>
+    </aside>
+</section>
+<section>
+    <article>
+        <p>
+                </p>
+    </article>
+</section>
+		<center>
+			<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>		</center>
+    </main>
+    <footer style="padding-top: 50px;">
+        <center>
+                            <a href="/p/dmca.html">Dmca</a>
+                            <a href="/p/contact.html">Contact</a>
+                            <a href="/p/privacy-policy.html">Privacy Policy</a>
+                            <a href="/p/copyright.html">Copyright</a>
+                    </center>
+    </footer>
+    <!-- Footer CSS JS -->            <script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+</body>
+
+</html>
